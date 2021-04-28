@@ -1,8 +1,6 @@
 const { hashSync, compare } = require('bcrypt');
 const { Router } = require('express');
-const { hashSync, compare } = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { Router } = require('express');
 const { USERS, INFORMATION, REFRESHTOKENS } = require('../helpers');
 const { REFRESH_TOKEN_SECRET, ACCESS_TOKEN_SECRET } = require('../env');
 const { validateToken } = require('../middlewares');
