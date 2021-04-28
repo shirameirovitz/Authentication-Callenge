@@ -2,7 +2,7 @@ const { ACCESS_TOKEN_SECRET } = require('../env');
 const jwt = require('jsonwebtoken');
 
 function validateToken(req, res, next) {
-  const authHeader = req.headers['Authorization'];
+  const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.slice(7);
 
   if (!token) {
